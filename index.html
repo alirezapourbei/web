@@ -133,11 +133,11 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
-// ارسال فرم با AJAX به ایمیل و نمایش مودال موفقیت
+// ارسال فرم با AJAX به Formsubmit با توکن
 document.getElementById('mainForm').addEventListener('submit', function(e){
     e.preventDefault();
     const formData = new FormData(this);
-    fetch('https://formsubmit.co/ajax/alirezapourbeiranvand@gmail.com', {
+    fetch('https://formsubmit.co/53af1c24fc28af3318567158363350e3', { // <--- توکن Formsubmit خودتو اینجا جایگزین کن
         method: 'POST',
         body: formData,
         headers: { 'Accept': 'application/json' }
