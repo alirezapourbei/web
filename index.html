@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>وبسایت علیرضا پوربیرانوند</title>
+<title>وبسایت رسمی علیرضا پوربیرانوند</title>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&family=Fira+Code&family=Roboto+Mono&display=swap" rel="stylesheet">
 <style>
 body { font-family:'Vazirmatn',sans-serif; background:#0f0f1a; color:#e0e0e0; scroll-behavior:smooth; margin:0; padding:0; transition: background 1.5s ease; }
@@ -35,18 +35,15 @@ input:focus + label, input:not(:placeholder-shown) + label, textarea:focus + lab
 button { padding:14px; width:100%; border:none; border-radius:10px; background:linear-gradient(135deg,#00ffcc,#ff6f61); color:white; font-weight:bold; cursor:pointer; transition:0.6s; }
 button:hover { transform: scale(1.03); background:linear-gradient(135deg,#ff6f61,#00ffcc); box-shadow:0 6px 15px rgba(255,111,97,0.5); }
 
-/* Modal */
+/* Modal موفقیت */
 #successModal { display:flex; position:fixed; top:0; left:0; width:100%; height:100%; justify-content:center; align-items:center; text-align:center; padding:30px; z-index:2000; opacity:0; pointer-events:none; transition: opacity 0.6s ease; }
 #successModal.show { opacity:1; pointer-events:auto; }
-#successModalContent { background: linear-gradient(135deg,#28a745,#218838); padding:25px; border-radius:20px; max-width:500px; margin:auto; transform: translateY(-40px) scale(0.8); transition: transform 0.8s ease, opacity 0.8s ease; }
+#successModalContent { background: #28a745; padding:25px; border-radius:20px; max-width:500px; margin:auto; transform: translateY(-40px) scale(0.8); transition: transform 0.8s ease, opacity 0.8s ease; }
 #successModal.show #successModalContent { transform: translateY(0) scale(1); }
 #successModalContent h1 { color:#fff; margin-bottom:12px; text-shadow:0 0 8px #000; }
 #successModalContent p { color:#fff; margin-bottom:15px; }
 #successModalContent .contacts a { display:inline-block; margin:5px; color:#fff; text-decoration:none; font-weight:bold; }
 #successModalContent .contacts a:hover { color:#c0ffc0; }
-
-/* Fade ساده هنگام موس */
-.fadeHover { transition: background 1.5s ease; }
 
 @media(max-width:768px){ header h1 { font-size:2.2em; } }
 </style>
@@ -61,52 +58,54 @@ button:hover { transform: scale(1.03); background:linear-gradient(135deg,#ff6f61
 </nav>
 
 <header id="header" class="fadeHover">
-  <h1>وبسایت علیرضا پوربیرانوند</h1>
-  <p>برنامه نویس و توسعه دهنده وب | خوش آمدید!</p>
+  <h1>وبسایت رسمی علیرضا پوربیرانوند</h1>
+  <p>برنامه نویس و توسعه دهنده وب | خوش آمدید</p>
 </header>
 
 <section class="profile-box fadeHover" id="profile">
   <h2>پروفایل من 👤</h2>
   <p><strong>نام:</strong> علیرضا پوربیرانوند</p>
   <p><strong>سن:</strong> 17 سال</p>
-  <p><strong>محل:</strong> خرم‌آباد، لرستان</p>
+  <p><strong>محل زندگی:</strong> استان لرستان , شهرستان خرم آباد</p>
   <p><strong>حوزه فعالیت:</strong> برنامه نویسی و توسعه وب 💻</p>
   <div class="contacts">
-    <a href="tel:+989965756268">📞 +989965756268</a>
-    <a href="https://instagram.com/alireza_pourb" target="_blank">📸 @alireza_pourb</a>
-    <a href="https://t.me/alireza_p1727" target="_blank">💬 @alireza_p1727</a>
+    <a href="tel:+989965756268">PHONE: 0965756268</a>
+    <a href="https://instagram.com/alireza_pourb" target="_blank">INSTAGRAM: alireza_pourb</a>
+    <a href="https://t.me/alireza_p1727" target="_blank">TELEGRAM: alireza_p1727 </a>
   </div>
 </section>
 
 <section id="formSection" class="fadeHover">
   <h2 style="text-align:center;">ثبت سفارش 📝</h2>
-  <form id="orderForm">
+  <form id="mainForm">
     <div class="input-group">
-      <input type="text" id="name" placeholder=" " required>
+      <input type="text" id="name" name="name" placeholder=" " required>
       <label for="name">نام و نام خانوادگی</label>
     </div>
     <div class="input-group">
-      <input type="email" id="email" placeholder=" " required>
+      <input type="email" id="email" name="email" placeholder=" " required>
       <label for="email">ایمیل</label>
     </div>
     <div class="input-group">
-      <input type="tel" id="phone" placeholder=" " required>
+      <input type="tel" id="phone" name="phone" placeholder=" " required>
       <label for="phone">شماره تلفن</label>
     </div>
     <div class="input-group">
-      <textarea id="message" placeholder=" " required></textarea>
+      <textarea id="message" name="message" placeholder=" " required></textarea>
       <label for="message">توضیحات یا پیام</label>
     </div>
+
     <button type="submit">ارسال سفارش</button>
   </form>
 </section>
 
+<!-- مودال موفقیت سبز -->
 <div id="successModal">
   <div id="successModalContent">
     <h1>ثبت سفارش شما با موفقیت انجام شد ✅</h1>
     <p>خیلی زود با شما برای اطلاعات تکمیلی تماس خواهیم گرفت.</p>
     <div class="contacts">
-      <a href="tel:+989965756268">📞 +989965756268</a>
+      <a href="tel:+9899656268">📞 +9899656268</a>
       <a href="https://instagram.com/alireza_pourb" target="_blank">📸 @alireza_pourb</a>
       <a href="https://t.me/alireza_p1727" target="_blank">💬 @alireza_p1727</a>
     </div>
@@ -124,16 +123,6 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
-// مودال موفقیت
-document.getElementById('orderForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  document.getElementById('successModal').classList.add('show');
-});
-
-function closeModal(){
-  document.getElementById('successModal').classList.remove('show');
-}
-
 // تغییر رنگ ساده هنگام موس روی بخش‌ها
 ['header','profile','formSection'].forEach(id=>{
   const sec = document.getElementById(id);
@@ -143,6 +132,30 @@ function closeModal(){
     if(id==='profile' || id==='formSection') sec.style.background = '#1b1b2f';
   });
 });
+
+// ارسال فرم با AJAX به ایمیل و نمایش مودال موفقیت
+document.getElementById('mainForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const formData = new FormData(this);
+    fetch('https://formsubmit.co/ajax/alirezapourbeiranvand@gmail.com', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if(response.ok){
+            document.getElementById('successModal').classList.add('show');
+            this.reset();
+        } else {
+            alert("خطا در ارسال فرم! لطفاً دوباره تلاش کنید.");
+        }
+    }).catch(error => {
+        alert("خطا در اتصال به سرور!");
+    });
+});
+
+function closeModal(){
+    document.getElementById('successModal').classList.remove('show');
+}
 </script>
 
 </body>
