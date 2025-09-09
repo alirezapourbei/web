@@ -566,5 +566,40 @@ document.querySelectorAll('.nav-link').forEach(link=>{
 });
 </script>
 
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <span>طراح سایت: <strong>علیرضا پوربیرانوند</strong></span>
+    <span class="license">🛡️ مجوز رسمی</span>
+  </div>
+</footer>
+
+<style>
+.footer{
+  width:100%;
+  padding:14px 0;
+  position:fixed;
+  bottom:0;
+  left:0;
+  background: rgba(8,8,16,0.7);
+  backdrop-filter: blur(8px);
+  border-top:1px solid rgba(255,255,255,0.03);
+  text-align:center;
+  font-family:"Inter",sans-serif;
+  color:var(--muted);
+  font-size:0.95rem;
+  z-index:1700;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+}
+.footer .license{
+  background: rgba(255,255,255,0.02);
+  padding:4px 8px;
+  border-radius:6px;
+  font-weight:600;
+}
+</style>
+
 </body>
 </html>
